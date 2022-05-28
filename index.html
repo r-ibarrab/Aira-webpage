@@ -64,6 +64,7 @@
         });
 
         socket.on('plantDataWeb', function(data){
+            console.log(data);
             document.getElementById("luz").innerHTML = data.light;
             document.getElementById("temp").innerHTML = data.temperature;
             document.getElementById("soil").innerHTML = data.soilHumidity;
